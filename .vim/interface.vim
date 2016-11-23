@@ -37,3 +37,8 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
+"---Custom tabs option
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab

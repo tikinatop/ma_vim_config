@@ -48,4 +48,11 @@ nmap <Leader>ei :tabedit ~/.vim/interface.vim<cr>
 "Edit snippets files (with completion)
 nmap <Leader>es :e ~/.vim/snippets/
 
+"---Emmet <Tab> replacement while keeping indentation
+let g:user_emmet_leader_key=','
+"let g:user_emmet_expandabbr_key='<Tab>,'
+"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
+"---Mouse support in Terminal Vim
+"set mouse=a
+"set ttymouse=xterm2

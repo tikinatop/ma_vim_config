@@ -5,7 +5,7 @@
 so ~/.vim/plugins.vim
 so ~/.vim/commands.vim 
 so ~/.vim/interface.vim 
-"so ~/.vim/syntax.vim 
+so ~/.vim/syntax.vim 
 
 
 "-------Autosourcing 
