@@ -49,7 +49,7 @@ nmap <Leader>ei :tabedit ~/.vim/interface.vim<cr>
 nmap <Leader>es :e ~/.vim/snippets/
 
 "---Emmet <Tab> replacement while keeping indentation
-let g:user_emmet_leader_key=','
+"let g:user_emmet_leader_key=',' "Set up leader key
 "let g:user_emmet_expandabbr_key='<Tab>,'
 "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 

@@ -20,6 +20,15 @@ Plugin 'jiangmiao/auto-pairs'
 "tmux
 Plugin 'christoomey/vim-tmux-navigator'
 
+"--------Style plugins
+
+Plugin 'itchyny/lightline.vim'
+"Lightline - Configuration :
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
 "Vim awesome recommandations
 
 "--EMMET PLUGIN GENERAL

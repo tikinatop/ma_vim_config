@@ -1,11 +1,17 @@
 """=====INTERFACE MANAGEMENT
 
+set t_Co=256
 
 "==COLOR SCHEME
-colorscheme molokai
+
+syntax enable
+set background=dark
+colorscheme Tomorrow-Night-Eighties
+
 
 set backspace=indent,eol,start
 set noerrorbells visualbell t_bv=
+set laststatus=2
 
 "Numbers
 
@@ -37,8 +43,19 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
+"let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+"let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+"let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+"let &t_SI = "\<Esc>[6 q"
+"let &t_SR = "\<Esc>[4 q"
+"let &t_EI = "\<Esc>[2 q"
+
+
 "---Custom tabs option
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+

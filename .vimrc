@@ -8,6 +8,10 @@ so ~/.vim/interface.vim
 so ~/.vim/syntax.vim 
 
 
+"---Autoreload file
+set autoread
+
+
 "-------Autosourcing 
 
 augroup autosourcing
