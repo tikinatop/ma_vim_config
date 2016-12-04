@@ -2,10 +2,10 @@
 
 "## File sourcing
 
-so ~/.vim/plugins.vim
-so ~/.vim/commands.vim 
-so ~/.vim/interface.vim 
-so ~/.vim/syntax.vim 
+source ~/.vim/vimrc/plugins.vim
+source ~/.vim/vimrc/commands.vim 
+source ~/.vim/vimrc/interface.vim 
+source ~/.vim/vimrc/syntax.vim 
 
 
 "---Autoreload file
@@ -18,3 +18,9 @@ augroup autosourcing
 	 autocmd!
 	 autocmd BufWritePost .vimrc source %
 augroup END
+
+"--- Source local .vimrc.local if exists
+
+if filereadable(expand("$HOME/.vimrc.local"))
+    source $HOME/.vimrc.local
+endif

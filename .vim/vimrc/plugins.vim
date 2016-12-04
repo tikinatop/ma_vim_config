@@ -33,16 +33,6 @@ let g:lightline = {
 
 "--EMMET PLUGIN GENERAL
 Plugin 'mattn/emmet-vim'
-let g:user_emmet_install_global = 0
-autocmd FileType html,css,javascript.jsx EmmetInstall
-
-let g:user_emmet_settings = {
-\  'javascript' : {
-\      'extends' : 'jsx',
-\  
-\   },
-\}
-
 
 "---------------------
 Plugin 'raimondi/delimitmate'
@@ -60,11 +50,6 @@ Plugin 'pangloss/vim-javascript'
 "Plugin 'jelera/vim-javascript-syntax'
 Plugin 'mxw/vim-jsx'
 
-"Vim Javascript
-
-let g:javascript_plugin_jsdoc = 1
-set foldmethod=syntax
-let g:jsx_ext_required = 0
 
 
 

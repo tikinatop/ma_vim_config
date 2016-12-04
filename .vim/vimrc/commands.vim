@@ -36,14 +36,8 @@ nmap <Leader><space> :nohlsearch<cr>
 "Rendre l'édition du vimrc plus facile"
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
-"Edit plugins file
-nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
-
-"Edit commands file
-nmap <Leader>ec :tabedit ~/.vim/commands.vim<cr>
-
-"Edit interface file
-nmap <Leader>ei :tabedit ~/.vim/interface.vim<cr>
+"Edit vimrc_extension_files
+nmap <Leader>er :tabedit ~/.vim/vimrc/
 
 "Edit snippets files (with completion)
 nmap <Leader>es :e ~/.vim/snippets/
