@@ -15,7 +15,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'msanders/snipmate.vim'
 Plugin 'jiangmiao/auto-pairs'
 "tmux
 Plugin 'christoomey/vim-tmux-navigator'
@@ -46,12 +45,16 @@ Plugin 'tpope/vim-surround'
 
 "Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
-"Plugin 'wookiehangover/jshint.vim'
-"Plugin 'jelera/vim-javascript-syntax'
-Plugin 'mxw/vim-jsx'
+Plugin 'maxmellon/vim-jsx-pretty'
 
+" optional
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'othree/es.next.syntax.vim'
 
-
+"-Snippet plugins
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 
 call vundle#end()            " required
 
