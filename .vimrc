@@ -2,7 +2,8 @@
 
 "## File sourcing
 
-source ~/.vim/vimrc/plugins.vim
+"source ~/.vim/vimrc/plugins.vim
+source ~/.vim/vimrc/plug.vim
 source ~/.vim/vimrc/commands.vim 
 source ~/.vim/vimrc/interface.vim 
 source ~/.vim/vimrc/syntax.vim 
