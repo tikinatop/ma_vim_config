@@ -7,6 +7,8 @@ source ~/.vim/vimrc/commands.vim
 source ~/.vim/vimrc/interface.vim 
 source ~/.vim/vimrc/syntax.vim 
 
+"---Désactive safe writing
+set backupcopy=yes
 
 "---Autoreload file
 set autoread
