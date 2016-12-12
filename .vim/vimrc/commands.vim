@@ -18,10 +18,15 @@ nmap <C-Q> :CtrlPMRUFiles<cr>
 
 "---Split Management
 
-"nmap <C-J> <C-W><C-J>
-"nmap <C-K> <C-W><C-K>
-"nmap <C-H> <C-W><C-H>
-"nmap <C-L> <C-W><C-L>
+nmap <C-M-J> :res -5<cr>
+nmap <C-M-K> :res +5<cr>
+nmap <C-M-H> :vertical resize +5<cr>
+nmap <C-M-L> :vertical resize -5<cr>
+
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
 
 
 "## Commands

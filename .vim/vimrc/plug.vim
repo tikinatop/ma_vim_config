@@ -49,6 +49,11 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 
+"-Vim - pandoc plugin
+Plug 'godlygeek/tabular', {'for': 'markdown'}
+Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
+Plug 'vim-pandoc/vim-pandoc', {'for': 'markdown'}
+Plug 'vim-pandoc/vim-pandoc-syntax', {'for': 'markdown'}
 call plug#end()
 
 let g:used_javascript_libs = 'react,flux,jquery,vue'
