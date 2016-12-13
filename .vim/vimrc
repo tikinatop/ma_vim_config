@@ -2,11 +2,11 @@
 
 "## File sourcing
 
-"source ~/.vim/vimrc/plugins.vim
-source ~/.vim/vimrc/plug.vim
-source ~/.vim/vimrc/commands.vim 
-source ~/.vim/vimrc/interface.vim 
-source ~/.vim/vimrc/syntax.vim 
+"source ~/.vim/rc/plugins.vim
+source ~/.vim/rc/plug.vim
+source ~/.vim/rc/commands.vim 
+source ~/.vim/rc/interface.vim 
+source ~/.vim/rc/syntax.vim 
 
 "---Désactive safe writing
 set backupcopy=yes
@@ -19,7 +19,7 @@ set autoread
 
 augroup autosourcing
 	 autocmd!
-	 autocmd BufWritePost .vimrc source %
+	 autocmd BufWritePost vimrc source %
 augroup END
 
 "--- Source local .vimrc.local if exists

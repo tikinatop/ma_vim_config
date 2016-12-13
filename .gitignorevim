@@ -1,7 +1,7 @@
 /*
 !.gitignore
-!/.vimrc
 !/.vim/
 /.vim/*
-!.vim/vimrc/
+!/.vim/vimrc
+!.vim/rc/
 !.vim/snippets/
