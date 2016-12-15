@@ -2,8 +2,8 @@
 
 "## File sourcing
 
-"source ~/.vim/rc/plugins.vim
 source ~/.vim/rc/plug.vim
+source ~/.vim/rc/plugin_opts.vim
 source ~/.vim/rc/commands.vim 
 source ~/.vim/rc/interface.vim 
 source ~/.vim/rc/syntax.vim 
@@ -27,3 +27,4 @@ augroup END
 if filereadable(expand("$HOME/.vimrc.local"))
     source $HOME/.vimrc.local
 endif
+

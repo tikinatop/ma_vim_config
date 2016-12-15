@@ -1,6 +1,10 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+augroup sourcefiles
+    autocmd BufNewFile,BufRead *.md,*.rmd,*.markdown setf pandoc
+augroup END
+
 
 call plug#begin('~/.vim/plugged')
 
@@ -15,11 +19,6 @@ Plug 'christoomey/vim-tmux-navigator'
 "--------Style plugins
 
 Plug 'itchyny/lightline.vim'
-"Lightline - Configuration :
-
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
 
 "Vim awesome recommandations
 
@@ -50,12 +49,12 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 
 "-Vim - pandoc plugin
-Plug 'godlygeek/tabular', {'for': 'markdown'}
-Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
-Plug 'vim-pandoc/vim-pandoc', {'for': 'markdown'}
-Plug 'vim-pandoc/vim-pandoc-syntax', {'for': 'markdown'}
+Plug 'godlygeek/tabular' ", {'for': ['markdown','pandoc']}
+Plug 'plasticboy/vim-markdown' ", {'for': ['markdown','pandoc']}
+Plug 'vim-pandoc/vim-pandoc' ", {'for': ['markdown','pandoc']}
+Plug 'vim-pandoc/vim-pandoc-syntax' ", {'for': ['markdown','pandoc']}
+Plug 'shime/vim-livedown' ", {'for': ['markdown','pandoc']}
+"Plug 'suan/instant-markdown-d' ", {'for': ['markdown','pandoc']}
+
 call plug#end()
-
-let g:used_javascript_libs = 'react,flux,jquery,vue'
-
 

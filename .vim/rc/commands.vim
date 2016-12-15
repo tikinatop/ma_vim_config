@@ -39,18 +39,14 @@ let mapleader = ':'
 nmap <Leader><space> :nohlsearch<cr>
 
 "Rendre l'édition du vimrc plus facile"
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>ev :e $MYVIMRC<cr>
 
 "Edit vimrc_extension_files
-nmap <Leader>er :tabedit ~/.vim/vimrc/
+nmap <Leader>er :e ~/.vim/rc/
 
 "Edit snippets files (with completion)
 nmap <Leader>es :e ~/.vim/snippets/
 
-"---Emmet <Tab> replacement while keeping indentation
-"let g:user_emmet_leader_key=',' "Set up leader key
-"let g:user_emmet_expandabbr_key='<Tab>,'
-"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 "---Mouse support in Terminal Vim
 "set mouse=a
