@@ -33,7 +33,7 @@ nmap <C-L> <C-W><C-L>
 
 "Setting the MapLeader
 let mapleader = ':'
-
+let maplocalleader='='
 
 "Enlever simplement l'highlighting de recherche"
 nmap <Leader><space> :nohlsearch<cr>
@@ -49,5 +49,15 @@ nmap <Leader>es :e ~/.vim/snippets/
 
 
 "---Mouse support in Terminal Vim
-"set mouse=a
-"set ttymouse=xterm2
+set ttymouse=xterm2
+
+function! ToggleMouse()
+    " check if mouse is enabled
+    if &mouse == 'a'
+        " disable mouse
+        set mouse=
+    else
+        " enable mouse everywhere
+        set mouse=a
+    endif
+endfunc

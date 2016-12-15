@@ -8,52 +8,54 @@ augroup END
 
 call plug#begin('~/.vim/plugged')
 
-
+"========================================================
+"===>  Essentials
+"========================================================
 Plug 'tpope/vim-vinegar'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'jiangmiao/auto-pairs'
-"tmux
-Plug 'christoomey/vim-tmux-navigator'
-
-"--------Style plugins
-
-Plug 'itchyny/lightline.vim'
-
-"Vim awesome recommandations
-
-"--EMMET PLUGIN GENERAL
-Plug 'mattn/emmet-vim'
-
-"---------------------
+Plug 'scrooloose/syntastic'             "Vast array of syntax (?)
+Plug 'jiangmiao/auto-pairs'             "Auto-close brackets
+Plug 'christoomey/vim-tmux-navigator'   "Tmux navigator
+Plug 'itchyny/lightline.vim'            "Style plugin
+Plug 'garbas/vim-snipmate'              "Snippets!
+"========================================================
+"===>  Not that essential but why not
+"========================================================
 Plug 'raimondi/delimitmate'
-Plug 'scrooloose/syntastic'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 "Plug 'morhetz/gruvbox'
+"-Snippet plugins
+Plug 'MarcWeber/vim-addon-mw-utils'     "???
+Plug 'tomtom/tlib_vim'
+Plug 'vim-scripts/todo-txt.vim'         "Todo.txt plugin for tracking things!
+"========================================================
+"===>  HTML
+"========================================================
+Plug 'mattn/emmet-vim'
 
-"Javascript specific plugins
-
-
+"========================================================
+"===>  Javascript
+"========================================================
 "Plug 'moll/vim-node'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
-
-" optional
+"===>Optionals
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/es.next.syntax.vim'
 
-"-Snippet plugins
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-
-"-Vim - pandoc plugin
-Plug 'godlygeek/tabular' ", {'for': ['markdown','pandoc']}
-Plug 'plasticboy/vim-markdown' ", {'for': ['markdown','pandoc']}
+"========================================================
+"===>  Markdown / Pandoc
+"========================================================
+Plug 'godlygeek/tabular' , {'for': ['markdown','pandoc']}
+Plug 'plasticboy/vim-markdown' , {'for': ['markdown','pandoc']}
 Plug 'vim-pandoc/vim-pandoc' ", {'for': ['markdown','pandoc']}
+Plug 'vim-pandoc/vim-pandoc-after' ", {'for': ['markdown','pandoc']}
 Plug 'vim-pandoc/vim-pandoc-syntax' ", {'for': ['markdown','pandoc']}
-Plug 'shime/vim-livedown' ", {'for': ['markdown','pandoc']}
+Plug 'fmoralesc/vim-pad' , {'for': ['markdown','pandoc']}
+Plug 'shime/vim-livedown' , {'for': ['markdown','pandoc']}
+Plug 'dhruvasagar/vim-table-mode' ", {'for': ['markdown','pandoc']}
 "Plug 'suan/instant-markdown-d' ", {'for': ['markdown','pandoc']}
 
 call plug#end()
