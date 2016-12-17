@@ -61,3 +61,9 @@ function! ToggleMouse()
         set mouse=a
     endif
 endfunc
+
+function! TimeStamp()
+   put ='```'
+   r !date +"\%a \%d \%b" | figlet -C utf8 
+   put ='```'
+endfunc
