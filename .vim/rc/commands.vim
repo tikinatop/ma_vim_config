@@ -28,6 +28,8 @@ nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
+nnoremap <C-E><C-E> cc<c-r>=FigletTT()<cr><esc>x o<esc>
+inoremap <C-E><C-T> <c-r>=TimeStamp()<cr><esc>x A <Space>
 
 "## Commands
 
@@ -47,6 +49,10 @@ nmap <Leader>er :e ~/.vim/rc/
 "Edit snippets files (with completion)
 nmap <Leader>es :e ~/.vim/snippets/
 
+"===UNICODE CHARACTERS (MEGA?)SHEET==="
+
+imap ^^a <C-V>226
+
 
 "---Mouse support in Terminal Vim
 set ttymouse=xterm2
@@ -62,8 +68,13 @@ function! ToggleMouse()
     endif
 endfunc
 
+function! FigletTT()
+   put ='```'
+   r !date +"\%a \%d \%b" | sed 's/.*/\u&/' | figlet -C utf8 
+   put ='```'
+   r !echo [$(date +"\%d/\%m/\%Y")]\(\#$(date +"\%d-\%m-\%Y")\)
+endfunc
+
 function! TimeStamp()
-   put ='```'
-   r !date +"\%a \%d \%b" | figlet -C utf8 
-   put ='```'
+    r !echo \`\` $(date +"\%H:\%M:\%S") \`\` 
 endfunc

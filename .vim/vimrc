@@ -22,6 +22,11 @@ augroup autosourcing
 	 autocmd BufWritePost vimrc source %
 augroup END
 
+"-------Setting temp dirs
+set backupdir=$HOME/.vim/backup//
+set backupdir=$HOME/.vim/swap//
+set backupdir=$HOME/.vim/undo//
+
 "--- Source local .vimrc.local if exists
 
 if filereadable(expand("$HOME/.vimrc.local"))

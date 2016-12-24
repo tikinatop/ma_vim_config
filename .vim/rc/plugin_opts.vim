@@ -29,12 +29,19 @@ let g:lightline = {
 
 let g:pandoc#filetypes#handled = ["markdown","pandoc"]
 let g:pandoc#filetypes#pandoc_markdown = 1
-let g:pandoc#formatting#mode = "hA"
+let g:pandoc#formatting#mode = "ha"
+let g:pandoc_autoformat_enabled = 0
 let g:pandoc#formatting#smart_autoformat_on_cursormoved = 1
-let g:pandoc#folding#level = 2
-let g:pandoc#folding#mode = "relative"
+"let g:pandoc#folding#level = 2
+let g:pandoc#folding#mode = 'relative'
 let g:pandoc#completion#bib#mode = 'citeproc'
 let g:pandoc#syntax#colorcolumn = 1
+
+"========================================================
+"===>  'vim-pandoc/vim-pandoc-syntax'
+"========================================================
+
+let g:pandoc#spell#enabled = 0
 
 "========================================================
 "===>  livedown

@@ -22,6 +22,7 @@ Plug 'garbas/vim-snipmate'              "Snippets!
 "========================================================
 "===>  Not that essential but why not
 "========================================================
+Plug 'scrooloose/nerdcommenter'         "For better comments
 Plug 'raimondi/delimitmate'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
